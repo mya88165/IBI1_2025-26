@@ -5,11 +5,12 @@ d = b - a
 e = c - b 
 print("d =", d)
 print("e =", e)
-print(d > e)
+print("is d greater than e?", d > e)
 # d is larger than e, so population growth is decelerating in Scotland. 
+
 X = True 
 Y = False 
-W = X or Y 
+W = X or Y
 print("W =", W)
 # Truth table for W = X or Y
 # X      Y      W
