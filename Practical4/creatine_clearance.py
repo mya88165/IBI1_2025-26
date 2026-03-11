@@ -9,15 +9,22 @@ age = float(input("please enter age: "))
 weight = float(input("please enter weight: "))
 cr = float(input("please enter creatine concentration: "))
 gender = input("please enter gender (male/female): ") .lower()
+
+error = False 
+
 if age >= 100:
     print("Error: age needs corrected")
-elif weight <= 20 or weight >= 80:
+    error = True 
+if weight <= 20 or weight >= 80:
     print("Error: weight needs corrected")
-elif cr <= 0 or cr >= 100:
+    error = True 
+if cr <= 0 or cr >= 100:
     print("Error: creatine concentration needs corrected")
-elif gender != "male" and gender != "female":
+    error = True 
+if gender != "male" and gender != "female":
     print("Error: gender needs corrected")
-else:
+    error = True  
+if not error:
     crcl = ((140 - age) * weight) / (72 * cr)
 
     if gender == "female":
