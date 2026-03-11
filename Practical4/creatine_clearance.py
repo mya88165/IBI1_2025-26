@@ -4,12 +4,11 @@
 # Otherwise calculate CrCl
 # If gender is female, multiply CrCl by 0.85
 # Print the final CrCl value
-
-age = 25
-weight = 60
-gender = "female"
-cr = 80
-
+ 
+age = float(input("please enter age: "))
+weight = float(input("please enter weight: "))
+cr = float(input("please enter creatine concentration: "))
+gender = input("please enter gender (male/female): ") .lower()
 if age >= 100:
     print("Error: age needs corrected")
 elif weight <= 20 or weight >= 80:

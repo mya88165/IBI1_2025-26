@@ -1,7 +1,6 @@
 # What does this piece of code do?
 # Answer:
-# This program generates random numbers between 1 and 10 ten times, calculates their average,
-# rounds the result up using the ceiling function, and prints the final value.
+# This program generates random numbers between 1 and 10 ten times and calculates total. 
 
 # Import libraries
 # randint allows drawing a random number,

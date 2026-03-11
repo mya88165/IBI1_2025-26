@@ -14,9 +14,8 @@ class_size = 91
 day = 1
 
 while infected < class_size:
-    print("Day", day, ":", infected, "students infected")
+    print("Day", day, ":", int(infected), "students infected")
     infected = infected + infected * growth_rate
     day = day + 1
 
-print("Day", day, ":", infected, "students infected")
 print("It took", day, "days to infect the whole class.")
