@@ -1,3 +1,5 @@
+
+
 seq = 'AAGAUACAUGCAAGUGGUGUGUCUGUUCUGAGAGGGCCUAAAAG'
 
 # define start and stop codons 

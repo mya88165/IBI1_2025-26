@@ -44,7 +44,7 @@ def longest_orf_with_stop(seq, chosen_stop):     # find longer ORF ending with c
     return longest_orf
 
 
-def count_codons_in_orf(orf, codon_counts):     # count codons in ORF 
+def count_codons_in_orf(orf, codon_counts):     # count codons in ORF tag
     for i in range(0, len(orf) - 2, 3):
         codon = orf[i:i+3]
         codon_counts[codon] = codon_counts.get(codon, 0) + 1

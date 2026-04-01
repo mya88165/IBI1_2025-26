@@ -5,19 +5,16 @@ output_file = "stop_genes.fa"
 # define stop codons 
 stop_codons = ["TAA", "TAG", "TGA"]
 
-
 def get_gene_name(header):
     parts = header.split()         # split header into words 
     first_part = parts[0]          # something like >YBR024W_mRNA
     gene_name = first_part[1:]     # remove >
     return gene_name
 
-
 def find_in_frame_stop_codons(seq):
-    found_stops = set()     # store unique stop codons 
+    found_stops = set()
 
-    # find start codon
-    for i in range(len(seq) - 2):
+    for i in range(0, len(seq) - 2, 3):
         if seq[i:i+3] == "ATG":
             for j in range(i, len(seq) - 2, 3):
                 codon = seq[j:j+3]
@@ -42,7 +39,6 @@ with open(input_file, "r") as infile, open(output_file, "w") as outfile:
                 gene_name = get_gene_name(header)
                 stops = find_in_frame_stop_codons(sequence)
 
-                # write gene is stop codons found 
                 if stops:
                     outfile.write(f">{gene_name} {' '.join(stops)}\n")
                     outfile.write(sequence + "\n")
