@@ -14,7 +14,7 @@ def get_gene_name(header):
 def find_in_frame_stop_codons(seq):
     found_stops = set()
 
-    for i in range(0, len(seq) - 2, 3):
+    for i in range(0, len(seq) - 2, 3):     # searches in codons instead of looking for codons in every position 
         if seq[i:i+3] == "ATG":
             for j in range(i, len(seq) - 2, 3):
                 codon = seq[j:j+3]
