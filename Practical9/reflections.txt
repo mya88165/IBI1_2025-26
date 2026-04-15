@@ -1,0 +1,5 @@
+This practical helped me understand how infections can be modelled using probability and Python. I found the basic SIR model easier because it only involved keeping track of three groups of people over time. The vaccination model was also quite manageable once I understood how vaccinated individuals reduce the number of susceptible people.
+
+The spatial SIR model was more difficult because I had to work with a 2D array and check neighbouring cells carefully. I found it challenging to make sure the neighbours stayed inside the grid and to update the model correctly at each time step.
+
+The most important thing I learned was how real-world biological problems can be turned into computational models. I also learned how randomness affects results, since running the model multiple times gives different outcomes.
