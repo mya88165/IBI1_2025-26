@@ -12,7 +12,6 @@ population[outbreak[0], outbreak[1]] = 1
 beta = 0.3
 gamma = 0.05
 
-# pseudocode:
 # for each time step:
 #   find infected cells
 #   for each infected cell:
