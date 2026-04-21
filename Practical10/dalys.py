@@ -3,7 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Change this to your own folder path
 os.chdir("/Users/mee/Downloads/IBI1_materials/IBI1_2025-26/IBI1_2025-26/Practical10")
 
 print(os.getcwd())

@@ -1,0 +1,8 @@
+Question:
+What was the distribution of DALYs across all countries in 2019?
+
+Code starts at line:
+68
+
+Result:
+The boxplot shows that DALYs vary widely across countries in 2019. Some countries had much higher DALYs than others. This suggests disease burden differs greatly between countries due to differences in population size, healthcare systems, income, and public health conditions.
