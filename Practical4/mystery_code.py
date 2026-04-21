@@ -1,6 +1,6 @@
 # What does this piece of code do?
 # Answer:
-# This program generates random numbers between 1 and 10 ten times and calculates total. 
+# This program generates 11 random numbers between 1 and 10 ten times and calculates total. 
 
 # Import libraries
 # randint allows drawing a random number,
