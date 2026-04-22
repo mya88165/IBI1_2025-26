@@ -1,4 +1,9 @@
+# Create a function called protein_mass
+# It will calculate the total mass of an amino acid sequence
 def protein_mass(sequence):
+    # Create a dictionary containing amino acids and their masses
+    # Key = amino acid letter
+    # Value = mass in amu
     amino_acid_masses = {
         "G": 57.02,
         "A": 71.04,
@@ -8,7 +13,7 @@ def protein_mass(sequence):
         "T": 101.05,
         "C": 103.01,
         "I": 113.08,
-        "L": 113.08, 
+        "L": 113.08,
         "N": 114.04,
         "D": 115.03,
         "Q": 128.06,
@@ -22,17 +27,31 @@ def protein_mass(sequence):
         "W": 186.08
     }
 
+    # Start total mass at zero
     total_mass = 0
 
+    # Go through each amino acid in the sequence one by one
     for amino_acid in sequence:
+
+        # Check if the amino acid exists in the dictionary
         if amino_acid in amino_acid_masses:
+
+            # Add its mass to the running total
             total_mass += amino_acid_masses[amino_acid]
+
         else:
+            # If amino acid is invalid, stop and show error message
             return f"Error: '{amino_acid}' has no recorded mass."
 
+    # After loop finishes, return total mass
     return total_mass
 
+
+# Example valid sequence
 example_sequence = "ACDE"
+
+# Call function and print result
 print("Protein mass:", protein_mass(example_sequence))
 
-print(protein_mass("ACZX")) #test invalid sequence 
+# Test invalid sequence containing letters not in dictionary
+print(protein_mass("ACZX"))
