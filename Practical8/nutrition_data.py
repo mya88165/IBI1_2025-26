@@ -66,4 +66,36 @@ burger = food_item("Burger", 700, 30, 50, 35)
 foods_eaten = [apple, sandwich, pizza, ice_cream, burger]
 
 # Run the nutrition tracker function using the list
+print ("total foods eaten: ")
 nutrition_tracker(foods_eaten)
+
+#   optional user input 
+foods = {
+    "apple": apple,
+    "sandwich": sandwich,
+    "pizza": pizza,
+    "ice_cream": ice_cream,
+    "burger": burger
+}
+
+foods_eaten = input(
+    "what foods have you eaten? (apple sandwich pizza ice_cream burger): "
+)
+
+# split text into separate words
+food_names = foods_eaten.split()
+
+chosen_foods = []
+
+# check each typed food
+for name in food_names:
+    if name in foods:
+        chosen_foods.append(foods[name])
+    else:
+        print(name, "not found")
+
+# run tracker if at least one valid food entered
+if len(chosen_foods) > 0:
+    nutrition_tracker(chosen_foods)
+else:
+    print("No valid foods entered")
