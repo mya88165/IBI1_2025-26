@@ -1,0 +1,17 @@
+Protein: Human DLX5
+UniProt ID: P56178
+Length: 289 amino acids
+Subcellular localisation: Nucleus
+Number of hits: 250
+Range of percentage identity: 52.3%–100%
+Percentage identity between human and mouse DLX5: 96.5%
+
+In the alignment, blue residues represented identical amino acids shared between the human and mouse DLX5 proteins, while grey residues represented similar amino acids with related physicochemical properties. This reflects the principles of the BLOSUM62 substitution matrix, where biologically similar amino acid substitutions receive higher scores.
+
+Practical 13 investigated pairwise non-gapped global sequence alignment using human DLX5, mouse DLX5, and a random protein sequence. Human DLX5 (P56178) and mouse DLX5 (P70396) were obtained from UniProt and compared using percentage identity, Hamming distance, and a simplified BLOSUM62 substitution matrix.
+
+BLAST analysis identified 250 homologous sequences with percentage identities ranging from 52.3% to 100%. The best alignment with mouse DLX5 showed 96.5% sequence identity, demonstrating strong evolutionary conservation between the two proteins.
+
+The Python alignment program showed that human and mouse DLX5 had a percentage identity of 96.54%, a Hamming distance of 10, and a high positive BLOSUM62 normalised score of 3.83. In contrast, the random sequence comparisons showed percentage identities of only around 3%, very high Hamming distances, and negative BLOSUM62 scores.
+
+These results demonstrate that human and mouse DLX5 proteins are highly closely related, while the random sequence lacks biological similarity. The alignment also showed that identical and similar amino acids are conserved between related proteins, reflecting the principles behind substitution matrices such as BLOSUM62.
